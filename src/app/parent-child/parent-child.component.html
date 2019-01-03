@@ -1,0 +1,14 @@
+<p>
+  parent-child works!
+</p>
+
+<h1>{{ vin }}</h1>
+
+<h2>{{ abc }}</h2>
+<div *ngFor="let item of abc ;let i = index">
+  <li> {{i}} {{ item }}</li>
+</div>
+
+<button (click) ="foo()">Click</button>
+
+<h2 [style.color]="'orange'">{{dtaval}}</h2>

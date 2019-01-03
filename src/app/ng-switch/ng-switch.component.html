@@ -1,0 +1,16 @@
+<p>
+  ng-switch works!
+</p>
+
+<div [ngSwitch] ="batch">
+
+  <h1 *ngSwitchCase = "'web'">Welcome to web !</h1>
+
+  <h1 *ngSwitchCase = "'ppa'">Welcome to ppa </h1>
+
+  <h1 *ngSwitchCase = "'java'">Welcome to java</h1>
+
+  <h1 *ngSwitchDefault >Wrong selection</h1>
+</div>
+
+

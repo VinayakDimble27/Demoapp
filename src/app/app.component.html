@@ -1,0 +1,67 @@
+<!-- Property binding Component -->
+<!-- <app-pro-bind></app-pro-bind> -->
+
+<!-- Event binding component -->
+<!-- <app-event-bind></app-event-bind> -->
+
+<!-- Class binding component  -->
+<!-- <app-class-bind></app-class-bind>  -->
+
+<!-- Style bind component -->
+<!-- <app-style-bind></app-style-bind> -->
+
+<!-- ngIF demo -->
+<!-- <app-ng-if-demo></app-ng-if-demo> -->
+
+<!-- ngFor Demo-->
+<!-- <app-ng-for-demo></app-ng-for-demo> -->
+
+<!-- ngSwitch Demo-->
+<!-- <app-ng-switch></app-ng-switch> -->
+
+<!-- Two way binding with ng Model Demo-->
+<!-- <app-ng-model-demo></app-ng-model-demo> -->
+
+<!-- Two way binding without ngModel  -->
+<!-- <app-twoway-wo-ngmodel></app-twoway-wo-ngmodel> -->
+
+<!-- Communication between Parent and child  -->
+ <!-- <app-parent-child [vin] = "parentdata" [abc] = "parentdata1" ></app-parent-child> -->
+
+<!-- Communication between child and Parent  -->
+ <!-- <app-child-parent (childparent) = "Message = $event"></app-child-parent>
+ <h1 [style.color]="'green'">{{Message}}</h1>
+ 
+ <div *ngFor="let item of Message">
+     <li [style.color]="'red'">{{ item }}</li>
+ </div> -->
+
+ <!-- Parent to child and child to parent-->
+ <!-- <app-parent-child [vin] = "'parent to child hello'" (data)="Message = $event" ></app-parent-child>
+<h1>{{ Message }}</h1> -->
+
+    <!-- Component ON SAME LEVEL COMMUNICATION -->
+ <!-- <app-child-parent></app-child-parent>-->
+
+<!-- TEMPLATE REFERENCE  -->
+<!-- <app-template-refer></app-template-refer> -->
+<h1>Root component</h1>
+
+<nav>
+    <h1>Binding</h1>
+    <a routerLink="/property-binding">Property Binding</a> <br />
+    <a routerLink="/event-binding">Event Binding</a><br />
+    <a routerLink ="/class-binding">Class Binding</a><br />
+    <a routerLink ="/style-binding">Style Binding</a><br />
+    <h1>Directives</h1>
+    <a routerLink ="/ng-if-demo">ng If</a><br />
+    <a routerLink ="/ng-for-demo">ng for</a><br />
+    <a routerLink ="/ng-switch-demo">ng Switch</a><br />
+    <h1>Two way binding</h1>
+    <a routerLink ="/ng-model-demo">Two way binding</a><br />
+    <a routerLink ="/twoway-wo-ngmodel">Two way binding without ngModel</a><br />
+
+    <h1>Inter communication</h1>
+    <a routerLink ="/childparent">Parent to child</a><br />
+  </nav>
+<router-outlet></router-outlet>

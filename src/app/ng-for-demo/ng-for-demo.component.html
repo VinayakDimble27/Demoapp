@@ -1,0 +1,17 @@
+<p>
+  ng-for-demo works!
+</p>
+
+<div *ngFor = "let data of arr">
+<h1>
+ {{ data }}
+</h1>
+</div>
+
+<div *ngFor = "let data of arr; let i = index">
+  <h1 >{{i}}   : {{ data }}</h1>
+  </div>
+  
+<div *ngFor = "let data of arr; let i = index">
+    <h1 *ngIf ="i==2">{{i}}   : {{ data }}</h1>
+    </div>
