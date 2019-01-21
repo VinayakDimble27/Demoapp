@@ -1,4 +1,8 @@
-<!-- Property binding Component -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Property binding Component -->
 <!-- <app-pro-bind></app-pro-bind> -->
 
 <!-- Event binding component -->
@@ -45,9 +49,23 @@
 
 <!-- TEMPLATE REFERENCE  -->
 <!-- <app-template-refer></app-template-refer> -->
-<h1>Root component</h1>
+<div class="container">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Root component</a></li>
+        <li><a routerLink="/property-binding">Property Binding</a></li>
+        <li><a routerLink="/event-binding">Event Binding</a><br /></li>
+        <li> <a routerLink ="/class-binding">Class Binding</a><br /></li>
+        <li><a routerLink ="/style-binding">Style Binding</a></li>
+        <li><a routerLink ="/ng-if-demo">ng If</a></li>
+        <li><a routerLink ="/ng-for-demo">ng for</a></li>
+        <li><a routerLink ="/ng-switch-demo">ng Switch</a></li>
+        <li><a routerLink ="/ng-model-demo">Two way binding</a></li>
+        <li><a routerLink ="/twoway-wo-ngmodel">Two way binding without ngModel</a></li>   
+        <li><a routerLink ="/childparent">Parent to child</a></li>
+        <li><a routerLink ="/batchlist">Batch List with Service and Dependency Injection</a></li>
+    </ul>
 
-<nav>
+<!-- <nav class="navbar navbar-default">
     <h1>Binding</h1>
     <a routerLink="/property-binding">Property Binding</a> <br />
     <a routerLink="/event-binding">Event Binding</a><br />
@@ -63,5 +81,7 @@
 
     <h1>Inter communication</h1>
     <a routerLink ="/childparent">Parent to child</a><br />
-  </nav>
+  </nav> -->
+
 <router-outlet></router-outlet>
+</div>

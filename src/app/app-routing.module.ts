@@ -10,6 +10,7 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgModelDemoComponent } from './ng-model-demo/ng-model-demo.component';
 import { TwowayWoNgmodelComponent } from './twoway-wo-ngmodel/twoway-wo-ngmodel.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
+import { BatchlistComponent } from './batchlist/batchlist.component';
 const routes: Routes = [
  { path : 'property-binding', component : ProBindComponent},
  { path : 'event-binding' , component : EventBindComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
  { path : 'ng-switch-demo' , component : NgSwitchComponent},
  { path : 'ng-model-demo' , component : NgModelDemoComponent},
  { path : 'twoway-wo-ngmodel' , component : TwowayWoNgmodelComponent},
- { path : 'childparent' , component : ChildParentComponent}
+ { path : 'childparent' , component : ChildParentComponent},
+ { path : 'batchlist' , component : BatchlistComponent}
 ];
 
 @NgModule({

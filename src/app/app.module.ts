@@ -15,6 +15,8 @@ import { TwowayWoNgmodelComponent } from './twoway-wo-ngmodel/twoway-wo-ngmodel.
 import { ParentChildComponent } from './parent-child/parent-child.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
 import { TemplateReferComponent } from './template-refer/template-refer.component';
+import { BatchlistComponent } from './batchlist/batchlist.component';
+import { BatchserviceService } from './batchservice.service';
 
 @NgModule({
   declarations: [
@@ -30,14 +32,15 @@ import { TemplateReferComponent } from './template-refer/template-refer.componen
     TwowayWoNgmodelComponent,
     ParentChildComponent,
     ChildParentComponent,
-    TemplateReferComponent
+    TemplateReferComponent,
+    BatchlistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [BatchserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
